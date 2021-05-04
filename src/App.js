@@ -5,13 +5,15 @@ import Topbar from './components/Topbar'
 
 function App() {
   return (
+
     <div id="wrapper">
 
-	  <Topbar/>    
-      <Sidebar/>
+		  <Sidebar />
+
 
 		{/* Content Wrapper */}
 		<div id="content-wrapper" className="d-flex flex-column">
+			  <Topbar />
 
 			{/* Main Content */}
 			<div id="content">
