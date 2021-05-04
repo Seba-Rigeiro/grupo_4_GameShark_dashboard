@@ -1,11 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-<<<<<<< HEAD
 import Sidebar from './components/Sidebar/Sidebar'
-=======
-import Sidebar from './components/Sidebar'
-import Topbar from './components/Topbar'
->>>>>>> 69c9b3a9bf0df568b47d65238b88a492e2be2dcb
 
 function App() {
   return (
@@ -96,7 +91,7 @@ function App() {
 								</div>
 								<div className="card-body">
 									<div className="text-center">
-										<img className="img-fluid px-3 px-sm-4 mt-3 mb-4" src="images/mandalorian.jpg" alt=" Star Wars - Mandalorian "/>
+										<img className="img-fluid px-3 px-sm-4 mt-3 mb-4" src="images/spiderman.jpeg" alt=" Spider-Man - Miles Morales "/>
 									</div>
 									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, consequatur explicabo officia inventore libero veritatis iure voluptate reiciendis a magnam, vitae, aperiam voluptatum non corporis quae dolorem culpa citationem ratione aperiam voluptatum non corporis ratione aperiam voluptatum quae dolorem culpa ratione aperiam voluptatum?</p>
 									<a className="btn btn-danger" target="_blank" rel="nofollow" href="/">View movie detail</a>
