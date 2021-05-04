@@ -1,62 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+<<<<<<< HEAD
 import Sidebar from './components/Sidebar/Sidebar'
+=======
+import Sidebar from './components/Sidebar'
+import Topbar from './components/Topbar'
+>>>>>>> 69c9b3a9bf0df568b47d65238b88a492e2be2dcb
 
 function App() {
   return (
+
     <div id="wrapper">
-    
-      <Sidebar/>
+
+		  <Sidebar />
+
 
 		{/* Content Wrapper */}
 		<div id="content-wrapper" className="d-flex flex-column">
+			  <Topbar />
 
 			{/* Main Content */}
 			<div id="content">
-
-				{/* Topbar */}
-				<nav className="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-
-					{/* Sidebar Toggle (Topbar) */}
-					<button id="sidebarToggleTop" className="btn btn-link d-md-none rounded-circle mr-3">
-						<i className="fa fa-bars"></i>
-					</button>
-
-					{/* Topbar Navbar */}
-					<ul className="navbar-nav ml-auto">
-
-						{/* Nav Item - Alerts */}
-						<li className="nav-item dropdown no-arrow mx-1">
-							<a className="nav-link dropdown-toggle" href="/" id="alertsDropdown">
-								<i className="fas fa-bell fa-fw"></i>
-								{/* Counter - Alerts */}
-								<span className="badge badge-danger badge-counter">3+</span>
-							</a>
-						</li>
-
-						{/* Nav Item - Messages */}
-						<li className="nav-item dropdown no-arrow mx-1">
-							<a className="nav-link dropdown-toggle" href="/" id="messagesDropdown">
-								<i className="fas fa-envelope fa-fw"></i>
-								{/* Counter - Messages */}
-								<span className="badge badge-danger badge-counter">7</span>
-							</a>
-						</li>
-
-						<div className="topbar-divider d-none d-sm-block"></div>
-
-						{/* Nav Item - User Information */}
-						<li className="nav-item dropdown no-arrow">
-							<a className="nav-link dropdown-toggle" href="/" id="userDropdown">
-								<span className="mr-2 d-none d-lg-inline text-gray-600 small">Jordan Walke</span>
-								<img className="img-profile rounded-circle" src="images/jordan-walke.png" alt="Jordan Walke - Creador de React" width="60"/>
-							</a>
-						</li>
-
-					</ul>
-
-				</nav>
-				{/* End of Topbar */}
 
 				{/* Content Row Top */}
 				<div className="container-fluid">
@@ -73,7 +37,7 @@ function App() {
 								<div className="card-body">
 									<div className="row no-gutters align-items-center">
 										<div className="col mr-2">
-											<div className="text-xs font-weight-bold text-primary text-uppercase mb-1">Movies in Data Base</div>
+											<div className="text-xs font-weight-bold text-primary text-uppercase mb-1">Games in Data Base</div>
 											<div className="h5 mb-0 font-weight-bold text-gray-800">21</div>
 										</div>
 										<div className="col-auto">
@@ -128,7 +92,7 @@ function App() {
 						<div className="col-lg-6 mb-4">
 							<div className="card shadow mb-4">
 								<div className="card-header py-3">
-									<h5 className="m-0 font-weight-bold text-gray-800">Last movie in Data Base</h5>
+									<h5 className="m-0 font-weight-bold text-gray-800">Last game in Data Base</h5>
 								</div>
 								<div className="card-body">
 									<div className="text-center">
