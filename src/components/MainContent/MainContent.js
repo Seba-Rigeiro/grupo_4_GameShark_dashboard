@@ -9,27 +9,15 @@ function MainComponent(){
     return(
         
 			<div id="content">
-
-            {/* Content Row Top */}
-            <div className="container-fluid">
-                <ContentRowTop />
-
-                <ContentRowMovies />
-            
-                
-                
-                <div className="row">
-                    
-                    <LastGame />
-
-                    <GenreDB />
-
-                    {/* Genres in DB */}
-                    
+                <div className="container-fluid">
+                    <ContentRowTop />
+                    <ContentRowMovies />
+                    <div className="row">
+                        <LastGame />
+                        <GenreDB />
+                    </div>
                 </div>
             </div>
-            {/*End Content Row Top*/}
-        </div>
         
     )
 }
