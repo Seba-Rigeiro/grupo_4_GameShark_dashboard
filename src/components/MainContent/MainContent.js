@@ -12,13 +12,13 @@ function MainComponent(){
                 <div className="container-fluid">
                     <ContentRowTop />
                     <div className="row">
-                    <ContentRowTotal title="Total de juegos" total="21"/>
-                    <ContentRowTotal title="Total de usuarios" total="79"/>
-                    <ContentRowTotal title="Total de plataformas" total="4"/>
+                    <ContentRowTotal endpoint="http://localhost:3001/api/products" title="Total de juegos" total="21"/>
+                    <ContentRowTotal endpoint="http://localhost:3001/api/users" title="Total de usuarios" total="79"/>
+                    <ContentRowTotal endpoint="http://localhost:3001/api/platforms" title="Total de plataformas" total="4"/>
                     </div>
                     
                     <div className="row">
-                        <LastGame info="lorem ipsum" src="images/mandalorian.jpg" href="/" />
+                        <LastGame/>
                         <div className="col-lg-6 mb-4">						
                             <div className="card shadow mb-4">
                                 
