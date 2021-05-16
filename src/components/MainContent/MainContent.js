@@ -12,9 +12,9 @@ function MainComponent(){
                 <div className="container-fluid">
                     <ContentRowTop />
                     <div className="row">
-                    <ContentRowTotal endpoint="http://localhost:3001/api/products" title="Total de juegos" total="21"/>
-                    <ContentRowTotal endpoint="http://localhost:3001/api/users" title="Total de usuarios" total="79"/>
-                    <ContentRowTotal endpoint="http://localhost:3001/api/platforms" title="Total de plataformas" total="4"/>
+                    <ContentRowTotal endpoint="http://localhost:3001/api/products" title="Total de juegos"/>
+                    <ContentRowTotal endpoint="http://localhost:3001/api/users" title="Total de usuarios"/>
+                    <ContentRowTotal endpoint="http://localhost:3001/api/platforms" title="Total de plataformas"/>
                     </div>
                     
                     <div className="row">
@@ -29,12 +29,7 @@ function MainComponent(){
                             
                                 <div className="card-body">
                                     <div className="row">
-                                        <GenreDB title="Fantasia"/>
-                                        <GenreDB title="FPS"/>
-                                        <GenreDB title="Horror"/>
-                                        <GenreDB title="Point and Click"/>
-                                        <GenreDB title="Aventura"/>
-                                        <GenreDB title="MMORPG"/>
+                                        <GenreDB />
                                     </div>
                                 </div>
                             </div>

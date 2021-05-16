@@ -4,7 +4,6 @@ class ContentRowTotal extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            valor: props.valor ,
             title: props.title ,
             data: null ,
             endpoint: props.endpoint 

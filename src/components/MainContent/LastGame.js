@@ -15,8 +15,7 @@ class LastGame extends Component {
         fetch("http://localhost:3001/api/products/lastAdded")
             .then(res => res.json())
             .then(data => this.setState({
-                image: "localhost:3001/img/product/product-1619816077296.jpg" ,
-                name: data.data.name
+                image: data.data[0].image
             }))
 
     }
@@ -31,7 +30,7 @@ class LastGame extends Component {
                         </div>
                         <div className="card-body">
                             <div className="text-center">
-                                <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" src="/img/product/product-1619816077296.jpg" alt={this.state.name}/>
+                                <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" src={this.state.image} alt={this.state.name}/>
                             </div>
                             <p>{this.state.description}</p>
                             <a className="btn btn-danger" target="_blank" rel="nofollow" href="">Ver detalles</a>
