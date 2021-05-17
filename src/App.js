@@ -1,20 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
 import Sidebar from './components/Sidebar/Sidebar'
-import Topbar from './components/Topbar'
-import MainContent from './components/MainContent/MainContent'
-import Footer from './components/Footer/Footer'
+import Index from './containers/Index'
+import Juegos from './containers/Juegos'
+import {Switch , Route} from 'react-router-dom'
 
 function App() {
   return (
 
     <div id="wrapper">
 		<Sidebar />
-			<div id="content-wrapper" className="d-flex flex-column">
-			  	<Topbar />
-			  	<MainContent />
-|				<Footer />
-			</div>
+		<Switch>
+            <Route exact path="/">
+				<Index />
+            </Route>
+			<Route exact path="/juegos">
+				<Juegos />
+			</Route>
+        </Switch>
+			
 	</div>
   );
 }

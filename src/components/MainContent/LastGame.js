@@ -4,22 +4,19 @@ class LastGame extends Component {
     constructor() {
         super();
         this.state = {
-            image: "" ,
-            description: "",
-            name: ""
-
+            data: []
         }
     }
 
     componentDidMount(){
         fetch("http://localhost:3001/api/products/lastAdded")
             .then(res => res.json())
-            .then(data => this.setState({
-                image: data.data[0].image
-            }))
+            .then(data => {
+                console.log(data)
+                this.setState({data: data.data[0]})
+            })
 
     }
-
 
     render() {
         return (
@@ -30,15 +27,19 @@ class LastGame extends Component {
                         </div>
                         <div className="card-body">
                             <div className="text-center">
-                                <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" src={this.state.image} alt={this.state.name}/>
+                                <h2>{this.state.data.name}</h2>
+                                <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" src={"http://localhost:3001/img/products/" +  this.state.data.image}/>
+                                
                             </div>
-                            <p>{this.state.description}</p>
+                            <p>
+                                {this.state.data.description}
+                            </p>
                             <a className="btn btn-danger" target="_blank" rel="nofollow" href="">Ver detalles</a>
                         </div>
                     </div>
                 </div>
 )
-    
+
     }
        
 }
