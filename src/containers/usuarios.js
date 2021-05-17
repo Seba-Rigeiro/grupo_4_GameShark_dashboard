@@ -1,15 +1,15 @@
 import react from 'react';
 import Footer from '../components/Footer/Footer'
-import GameList from '../components/List/GameList'
+import UsersList from '../components/List/UsersList'
 
-function Juegos () {
+function Usuarios () {
     return (
         
         <>
-            <GameList />
+            <UsersList />
 	        <Footer />
         </>
     )
 }
 
-export default Juegos;
+export default Usuarios;
